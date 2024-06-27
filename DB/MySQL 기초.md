@@ -182,3 +182,34 @@ SELECT MIN(price)
 FROM 상품;
 ```
 
+### CONCAT, CHAR_LENGTH, REPLACE, NOW
+
+- CONCAT() : 여러 문자열 연결
+
+```sql
+SELECT CONCAT(상품명, 판매자, 주소지)
+FROM 상품;
+```
+
+- CHAR_LENGTH() : 문자열 길이 반환
+  
+```sql
+SELECT address, CHAR_LENGTH(address)
+FROM 상품;
+```
+
+  - LENGTH()
+     SQL에서 LENGTH()함수는 문자열의 실제 바이트 수를 반환함
+
+     한글 문자는 보통 2~3바이트를 차지하므로 MySQL에서는 CHAR_LENGTH() 사용
+
+    (PostgreSQL은 LENGTH() 사용 가능)
+
+- REPLACE() : 특정 문자열을 다른 문자열로 치환
+ ![image](https://github.com/syeej/TIL/assets/141565053/3a376112-f457-46bc-a5de-9649b9b38d12)
+
+ 
+- NOW() : 현재 날짜와 시간 반환
+  ![image](https://github.com/syeej/TIL/assets/141565053/7ee7fc37-c944-4df9-97e9-e96c990f38af)
+
+
